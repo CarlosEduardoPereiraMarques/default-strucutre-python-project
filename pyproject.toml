@@ -16,6 +16,8 @@ blue = "*"
 isort = "*"
 ruff = "*"
 mypy = "*"
+pip-audit = "*"
+taskipy = "*"
 
 
 [tool.poetry.group.doc.dependencies]
@@ -71,3 +73,9 @@ target-version = "py311"
 [tool.mypy]
 ignore_missing_imports = true
 disallow_untyped_defs = true
+
+[tool.taskipy.tasks]
+lint = "isort . && ruff . && blue --check --diff --color . && mypy . && pip-audit"
+format =  "ruff --silent --exit-zero --fix . && blue ."
+test = "pytest --cov-report term-missing --cov-report html --cov-branch --cov python_with_poetry/"
+post_test = "coverage html"
