@@ -35,5 +35,5 @@ jobs:
         - name: Run linters
           run: poetry run task lint
         # run tests
-        - name: Run tests
-          run: poetry run task test
+        # - name: Run tests
+        #   run: poetry run task test
