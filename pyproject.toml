@@ -9,7 +9,6 @@ packages = [{include = "default_structure_project"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 
-
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
 pytest-cov = "*"
@@ -17,6 +16,13 @@ blue = "*"
 isort = "*"
 ruff = "*"
 mypy = "*"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "*"
+mkdocstrings = "*"
+mkdocstrings-python = "*"
+mkdocs-macros-plugin = "*"
 
 [build-system]
 requires = ["poetry-core"]
