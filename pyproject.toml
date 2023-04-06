@@ -1,10 +1,9 @@
 [tool.poetry]
 name = "default-structure-project"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Setting a default structure for my python projects"
+authors = ["Carlos Marques <kadupmarques@gmail.com>"]
 readme = "README.md"
-packages = [{include = "default_structure_project"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
